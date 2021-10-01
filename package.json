@@ -6,9 +6,22 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.22.0",
+    "chroma-js": "^2.1.2",
+    "leaflet": "^1.7.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-redux": "^7.2.5",
+    "react-scripts": "^4.0.3",
+    "react-semantic-ui-range": "^0.7.1",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "tachyons": "^4.12.0",
+    "throttle-debounce": "^3.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -34,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.9"
   }
 }
