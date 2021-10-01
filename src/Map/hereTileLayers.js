@@ -64,17 +64,18 @@ HereTileLayers.HERE = L.TileLayer.extend({
       schemeStart == "terrain" ||
       // eslint-disable-next-line
       schemeStart == "hybrid"
+      
     ) {
-      tileServer = "aerial.maps.api.here.com";
+      tileServer = "gsdev.lokasimaps.com";
     }
     if (options.scheme.indexOf(".traffic.") !== -1) {
-      tileServer = "traffic.maps.api.here.com";
+      tileServer = "gsdev.lokasimaps.com";
     }
 
-    var tileUrl = "https://{s}." + tileServer + path;
+    var tileUrl = "https://gsdev.lokasimaps.com/geoserver/gwc/service/tms/1.0.0/lokasimaps:lokasimaps@EPSG%3A3857@png/{z}/{x}/{-y}.png";
 
     this._attributionUrl = L.Util.template(
-      "https://1." + tileServer + attributionPath,
+      tileUrl,
       this.options
     );
 
