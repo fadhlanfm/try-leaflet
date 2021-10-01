@@ -76,16 +76,16 @@ class Map extends React.Component {
       .addTo(this.map)
 
     // and for the sake of advertising your company, you may add a logo to the map
-    const brand = L.control({
-      position: 'bottomright'
-    })
-    brand.onAdd = function(map) {
-      var div = L.DomUtil.create('div', 'brand')
-      div.innerHTML =
-        '<a href="https://gis-ops.com" target="_blank"><img src="http://104.199.51.11:8083/wp-content/uploads/2018/11/gisops.png" width="150px"></img></a>'
-      return div
-    }
-    this.map.addControl(brand)
+    // const brand = L.control({
+    //   position: 'bottomright'
+    // })
+    // brand.onAdd = function(map) {
+    //   var div = L.DomUtil.create('div', 'brand')
+    //   div.innerHTML =
+    //     '<a href="https://gis-ops.com" target="_blank"><img src="http://104.199.51.11:8083/wp-content/uploads/2018/11/gisops.png" width="150px"></img></a>'
+    //   return div
+    // }
+    // this.map.addControl(brand)
   }
 
   // don't forget to render it :-)
